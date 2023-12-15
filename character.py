@@ -18,11 +18,11 @@ class character:
         print(self.position)
         pass
     
-    def move(self, phi) -> None:
+    def move(self, phi, r = 0) -> None:
         """
         cập nhật góc của nhân vật một góc phi
         """
-        self.position = (self.position[0], self.position[1] + phi)
+        self.position = (self.position[0] + r, self.position[1] + phi)
         pass
     
     def update(self) -> None:
